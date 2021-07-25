@@ -1,0 +1,30 @@
+name: Synchronize-zero205
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  repo-zero205:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_repo: "https://github.com/zero205/JD_tencent_scf.git"
+        source_branch: "main"
+        destination_branch: "master"
+        github_token: ${{ secrets.PAT }}
+        
+    - name: Delete Workflow Runs # 删除执行日志
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        token: ${{ github.token }}
+        repository: ${{ github.repository }}
+        retain_days: 1
+        keep_minimum_runs: 10
