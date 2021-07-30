@@ -1,0 +1,10 @@
+shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m, fast-open=false, udp-relay=false, tag=解锁灰色0
+http=106.52.127.71:19931, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色1
+http=106.52.127.72:19951, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色2
+http=aimer.one:3333,fast-open=false, udp-relay=false, tag=网易云解锁灰色3
+http=block4music.poetyin.me:39000, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色4
+网易云解锁灰色5 = http,block4music.poetyin.me,39000
+http=3music.poetyin.me:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色6
+http=music.lolico.me:39000, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色7
+http=taron.top:100, over-tls=false, fast-open=false, udp-relay=false, tag=网易云解锁灰色8
+网易云9 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,"T5ckndbLSXHQ"
